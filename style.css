@@ -8,9 +8,6 @@ body {
   background-attachment: fixed;
 }
 
-
-
-
 .navbar {
   display: flex;
   flex-direction: row;
@@ -36,17 +33,29 @@ body {
   text-align: center;
 }
 
-
+.titleSectionOne {
+  color: white;
+}
 
 .latest-news {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 
 .eldePic {
-  width: 28rem;
-  height: 14rem;
+  width: 28.9rem;
+  height: 22rem;
    
+}
+
+.content-news {
+    width: 28.9rem; 
+  height: 7rem;
+  background-color: white;
+  color: black;
+  margin-top: 0%;
 }
