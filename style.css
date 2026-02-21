@@ -35,27 +35,31 @@ body {
 
 .titleSectionOne {
   color: white;
+ 
 }
 
-.latest-news {
+ .latest-news {
   display: flex;
-  flex-direction: row;
   gap: 1rem;
-  margin-left: 0%;
-  margin-right: 0%;
+    margin-left: 2rem;
 }
 
+.news-card {
+  display: flex;
+  flex-direction: column;
+}
 
 .eldePic {
-  width: 28.9rem;
-  height: 22rem;
-   
+    width: 28rem;
+  height: 17rem;     
+  display: block;
+  object-fit: cover;
 }
 
 .content-news {
-    width: 28.9rem; 
-  height: 7rem;
-  background-color: white;
+  background: white;
+  height: 4rem;
   color: black;
-  margin-top: 0%;
+  padding: 1rem;
+  text-align: left;
 }
