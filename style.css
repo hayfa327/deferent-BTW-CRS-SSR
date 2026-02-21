@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/backgrounds/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbarLeft {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.hero-section {
+  height: 90vh;
+  width: 100%;
+  background-image: url("./assets/backgrounds/header-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+
+
+.latest-news {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+
+.eldePic {
+  width: 28rem;
+  height: 14rem;
+   
+}
