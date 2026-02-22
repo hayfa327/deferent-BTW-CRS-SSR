@@ -139,3 +139,31 @@ text-decoration: none;
 .content-news p {
   margin: 0.2rem 0 0 0;
 }
+
+.trandingPic {
+    width: 22rem;
+  height: 17rem;     
+  display: block;
+  object-fit: cover;
+}
+
+.content-trending {
+     width: 21.5rem;
+   background: white;
+  height: 5rem;
+  color: black;
+  display: flex;               
+  flex-direction: column;      
+  justify-content: flex-start;  
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.content-trending h3 {
+  margin: 0 0 0.3rem 0;
+}
+
+.content-trending p {
+  margin: 0.2rem 0 0 0;
+}
