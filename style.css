@@ -168,7 +168,6 @@ text-decoration: none;
 }
 
 
- 
 .titleSectionTwo {
   color: white;
   font-size: 2.5rem;
@@ -177,4 +176,11 @@ text-decoration: none;
    margin-left: 2rem;
    margin-right: 2rem; 
    width: 60%; 
+}
+
+.TipsPic {
+    width: 36rem;
+  height: 17rem;     
+  display: block;
+  object-fit: cover;
 }
