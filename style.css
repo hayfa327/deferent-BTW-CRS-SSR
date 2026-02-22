@@ -224,7 +224,7 @@ text-decoration: none;
 min-width: 280px;
 color: white;
 border: 1px solid rgba(138, 69, 250, 0.3);
-background-color: rgba(84, 56, 206, 0.466);
+background-color: rgba(84, 56, 206, 0.164);
 margin-right: 4rem;
  
 }
@@ -252,10 +252,58 @@ margin-right: 4rem;
 }
 
 
+.hot-content h3 {
+  margin-left: 3rem;
+  font-size: 1.4rem;
+  margin-top: 3rem;
+}
+
+.hot-content p {
+  margin-left: 3rem;
+  font-size: 0.9rem;
+  margin-bottom: 5rem;
+
+}
 
 
+.list-hot-topics {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
+}
 
+.list-hot-topics li {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
 
+.list-hot-topics li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.list-hot-topics .one-li {
+  background-color: rgba(40, 105, 226, 0.63);
+   
+}
+
+.list-hot-topics .two-li {
+  background-color: rgba(255, 19, 243, 0.63);
+}
+
+.list-hot-topics .three-li {
+  background-color: rgba(255, 180, 0, 0.63);
+}
+
+.list-hot-topics .four-li {
+  background-color: rgba(100, 255, 100, 0.63);
+}
+
+.list-hot-topics .five-li {
+  background-color: rgba(255, 100, 100, 0.63);
+}
 
 
 
