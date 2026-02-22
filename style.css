@@ -112,6 +112,13 @@ text-decoration: none;
   object-fit: cover;
 }
 
+.cyberPic {
+    width: 28rem;
+  height: 17rem;     
+  display: block;
+  object-fit: center bottom;
+}
+
 .content-news {
       width: 27.5rem;
    background: white;
