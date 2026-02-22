@@ -105,21 +105,25 @@ text-decoration: none;
 }
 
 .eldePic {
-    width: 28rem;
+  width: 100%;
+   max-width: 28rem;
   height: 17rem;     
   display: block;
   object-fit: cover;
+
 }
 
 .cyberPic {
-    width: 28rem;
+  width: 100%;
+    max-width: 28rem;
   height: 17rem;     
   display: block;
   object-fit: center bottom;
 }
 
 .content-news {
-      width: 27.5rem;
+  width: 100%;
+      max-width: 27.5rem;
    background: white;
   height: 5rem;
   color: black;
@@ -140,14 +144,16 @@ text-decoration: none;
 }
 
 .trandingPic {
-    width: 24rem;
+  width: 100%;
+    max-width: 24rem;
   height: 17rem;     
   display: block;
   object-fit: cover;
 }
 
 .content-trending {
-     width: 23.5rem;
+  width: 100%;
+     max-width: 23.5rem;
    background: white;
   height: 5rem;
   color: black;
@@ -179,14 +185,16 @@ text-decoration: none;
 }
 
 .TipsPic {
-    width: 36rem;
+  width: 100%;
+    max-width: 36rem;
   height: 17rem;     
   display: block;
   object-fit: cover;
 }
 
 .content-Tips {
-      width: 35.5rem;
+  width: 100%;
+      max-width: 35.5rem;
     background: white;
     height: 5rem;
     color: black;
