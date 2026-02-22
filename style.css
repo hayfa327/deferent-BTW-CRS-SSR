@@ -222,6 +222,10 @@ text-decoration: none;
   .hot-Topics {
   flex: 1;
 min-width: 280px;
+color: white;
+border: 1px solid rgba(138, 69, 250, 0.3);
+background-color: rgba(84, 56, 206, 0.466);
+margin-right: 4rem;
  
 }
 
