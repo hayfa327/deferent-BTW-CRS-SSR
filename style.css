@@ -48,9 +48,6 @@ text-decoration: none;
 }
 
 
-
-
-
 .hero-section {
   height: 60vh;
   width: 100%;
@@ -59,14 +56,31 @@ text-decoration: none;
   background-position: center top;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+    justify-content: flex-start;
   color: white;
-  text-align: center;
   box-shadow: 0 0 15px rgba(177, 68, 240, 0.8),
               0 0 30px rgb(255, 100, 255);
-  
+               
 }
+
+
+.hero-content {
+  font-size: 1rem;
+  padding-bottom: 3rem;
+   margin-left: 5rem;
+    
+}
+
+.title-hero{
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+
+
+
 
 
 .titleSectionOne1 {
