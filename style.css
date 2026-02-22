@@ -206,20 +206,31 @@ text-decoration: none;
   margin: 0.2rem 0 0 0;
 }
 
-.hot-Topics {
-  width: 25rem;
-  height: 19rem;
-  position: relative;   /* مهم جداً */
-  overflow: hidden;
-  border-radius: 10px;
+
+.main-layout {
+    display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+ 
+}
+
+.left-content {
+  flex: 3;  
+}
+
+  .hot-Topics {
+  flex: 1;
+min-width: 280px;
+ 
 }
 
 .dargon {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  height: auto;
+  border-radius: 10px;
 }
+
 
 .hot-content {
   position: absolute;
