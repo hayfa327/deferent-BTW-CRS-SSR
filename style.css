@@ -63,17 +63,20 @@ text-decoration: none;
   justify-content: center;
   color: white;
   text-align: center;
-  
-
   box-shadow: 0 0 15px rgba(177, 68, 240, 0.8),
               0 0 30px rgb(255, 100, 255);
   
 }
 
 
-.titleSectionOne {
+.titleSectionOne1 {
   color: white;
- 
+  font-size: 2.5rem;
+  border-bottom: 1px solid rgb(136, 20, 245);
+  padding: 0.5rem;
+   margin-left: 2rem;
+   margin-right: 2rem;
+   
 }
 
  .latest-news {
