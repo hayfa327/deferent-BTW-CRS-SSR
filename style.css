@@ -184,3 +184,24 @@ text-decoration: none;
   display: block;
   object-fit: cover;
 }
+
+.content-Tips {
+      width: 35.5rem;
+    background: white;
+    height: 5rem;
+    color: black;
+    display: flex;               
+    flex-direction: column;      
+    justify-content: flex-start;  
+    align-items: flex-start;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.content-Tips h3 {
+  margin: 0 0 0.3rem 0;
+}
+
+.content-Tips p {
+  margin: 0.2rem 0 0 0;
+}
