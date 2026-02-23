@@ -1,6 +1,6 @@
-import { sections, latest, trending, tips, hotTopics } from "./data.js";
+import { sections, latest, trending, tips, hotTopics,  } from "./data.js";
 
-
+import { hotTopicsWithoutImages } from "./data.js";
 
 const app = document.getElementById("app"); 
 const mainLayout = document.createElement("div");
@@ -93,8 +93,42 @@ function renderHotTopics(dataArray, containerId,) {
   });
 }
 
+function renderHotTags(containerId) {
+  const container = document.getElementById(containerId);
+
+  const ul = document.createElement("ul");
+  ul.classList.add("list-hot-topics");
+
+  hotTopicsWithoutImages.forEach((item, index) => {
+    const li = document.createElement("li");
+
+    li.textContent = item.title;
+
+    const classNames = [
+      "one-li",
+      "two-li",
+      "three-li",
+      "four-li",
+      "five-li"
+    ];
+
+    li.classList.add(classNames[index]);
+
+    ul.appendChild(li);
+  });
+
+  container.appendChild(ul);
+}
+
+
+
+ 
+
+
 
 renderNews(latest, "latest-container", "latest");
 renderNews(trending, "trending-container", "trending");
 renderNews(tips, "tips-container", "tips");
 renderHotTopics(hotTopics, "hotTopic-container");
+renderHotTags("hotTopic-container");
+

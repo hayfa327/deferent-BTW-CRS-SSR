@@ -358,7 +358,19 @@ margin-right: 0.5rem;
 }
 
 
+.list-hot-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
 
+.hot-topic-tag {
+  background: rgba(138, 69, 250, 0.2);
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  color: white;
+}
 
 
 .footer {
