@@ -1,4 +1,4 @@
-
+import { sections, latest, trending, tips, hotTopics } from "./data.js";
 const app = document.getElementById("app"); 
 
 sections.forEach(section => {
