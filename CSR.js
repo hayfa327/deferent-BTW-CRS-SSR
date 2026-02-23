@@ -1,15 +1,34 @@
 import { sections, latest, trending, tips, hotTopics } from "./data.js";
+
+
+
 const app = document.getElementById("app"); 
+const mainLayout = document.createElement("div");
+mainLayout.classList.add("main-layout");
+
+
+const leftContent = document.createElement("div");
+leftContent.classList.add("left-content");
+
+const rightSide = document.createElement("div");
+rightSide.classList.add("right-columns");
+ 
+mainLayout.appendChild(leftContent);
+mainLayout.appendChild(rightSide);
+app.appendChild(mainLayout);
 
 sections.forEach(section => {
   const sectionElement = document.createElement("section");
 
   sectionElement.innerHTML = `
-  <h2 class="titleSectionTwo">${section.title}</h2>
-  <div class="latest-news" id="${section.id}-container"></div>
-  `
-
-  app.appendChild(sectionElement);
+    <h2 class="titleSectionTwo">${section.title}</h2>
+    <div class="latest-news" id="${section.id}-container"></div>
+  `;
+if (section.id === "hotTopic") {
+  rightSide.appendChild(sectionElement);
+} else {
+  leftContent.appendChild(sectionElement);
+}
 });
 
 
