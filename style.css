@@ -439,6 +439,8 @@ margin-right: 0.5rem;
 
   .latest-news {
     flex-direction: column;
+    align-items: center;
+      margin-left: 0;
   }
 
   .main-layout {
@@ -449,6 +451,29 @@ margin-right: 0.5rem;
     margin-right: 0;
     width: 100%;
   }
+  .news-card {
+  width: 100%;
+  max-width: 350px;   
+}
+
+.eldePic,
+.cyberPic,
+.trandingPic,
+.TipsPic {
+  width: 100%;
+  height: 17rem;
+}
+
+.content-news,
+.content-trending,
+.content-Tips {
+  width: 100%;
+}
+
+.logo a {
+  margin-left: 0;
+}
+
 
 }
 
