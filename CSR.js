@@ -1,4 +1,4 @@
-import { sections, latest, trending, tips, hotTopics,  } from "./data.js";
+import {latest, trending, tips, hotTopics,  } from "./data.js";
 
 import {hotTopicsWithoutImages} from "./data.js"
 
@@ -119,12 +119,7 @@ article.appendChild(ul);
 
   section.appendChild(article);
   return section;
-}
- 
-
- 
- 
-   
+};
     rightSide.appendChild(renderHotTopics());
   
  
