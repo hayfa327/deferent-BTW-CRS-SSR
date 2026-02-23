@@ -4,7 +4,7 @@ import {hotTopicsWithoutImages} from "./data.js"
 
 const app = document.getElementById("app");
 
-/* ---------------- LAYOUT ---------------- */
+
 
 const mainLayout = document.createElement("div");
 mainLayout.classList.add("main-layout");
@@ -19,7 +19,7 @@ mainLayout.appendChild(leftContent);
 mainLayout.appendChild(rightSide);
 app.appendChild(mainLayout);
 
-/* ---------------- CREATE NEWS CARD ---------------- */
+
 
 function createNewsCard(item, type) {
   const card = document.createElement("div");
@@ -58,8 +58,7 @@ function createNewsCard(item, type) {
 
   return card;
 }
-
-/* ---------------- RENDER NEWS SECTIONS ---------------- */
+ 
 
 function renderNewsSection(dataArray, section, type) {
   const sectionElement = document.createElement("section");
@@ -78,7 +77,7 @@ function renderNewsSection(dataArray, section, type) {
   return sectionElement;
 }
 
-/* ---------------- RENDER HOT TOPICS ---------------- */
+ 
 
 function renderHotTopics() {
   
@@ -124,7 +123,7 @@ function renderHotTopics() {
 }
 console.log(hotTopics)
 
-/* ---------------- DISTRIBUTE SECTIONS ---------------- */
+ 
 
 sections.forEach(section => {
   if (section.id === "latest") {
