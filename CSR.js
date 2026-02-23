@@ -2,10 +2,11 @@ import { sections, latest, trending, tips, hotTopics,  } from "./data.js";
 
 import {hotTopicsWithoutImages} from "./data.js"
 
-const app = document.getElementById("app");
+ 
 
-
-
+app.appendChild(
+  renderNewsSection(latest, {id:"latest", title:"Latest News"}, "latest")
+);
 const mainLayout = document.createElement("div");
 mainLayout.classList.add("main-layout");
 
@@ -14,13 +15,19 @@ leftContent.classList.add("left-content");
 
 const rightSide = document.createElement("div");
 rightSide.classList.add("right-columns");
+ 
 
 mainLayout.appendChild(leftContent);
 mainLayout.appendChild(rightSide);
 app.appendChild(mainLayout);
 
-
-
+ leftContent.appendChild(
+  renderNewsSection(trending, {id:"trending", title:"Trending"}, "trending")
+);
+leftContent.appendChild(
+  renderNewsSection(tips, {id:"tips", title:"Tips & Guides"}, "tips")
+);
+ 
 function createNewsCard(item, type) {
   const card = document.createElement("div");
   card.classList.add("news-card");
@@ -94,57 +101,30 @@ function renderHotTopics() {
   article.appendChild(title);
 
   const ul = document.createElement("ul");
-  ul.classList.add("list-hot-topics");
+ul.classList.add("list-hot-topics");
 
-  const classNames = [
-    "one-li",
-    "two-li",
-    "three-li",
-    "four-li",
-    "five-li"
-  ];
+const classes = ["one-li","two-li","three-li","four-li","five-li"];
 
-  hotTopicsWithoutImages.forEach((item, index) => {
-    const li = document.createElement("li");
-    li.textContent = item.title;
+hotTopicsWithoutImages.forEach((item, index) => {
+  const li = document.createElement("li");
+  li.textContent = item.title;
+  li.classList.add(classes[index]);
+  ul.appendChild(li);
+});
 
-    if (classNames[index]) {
-      li.classList.add(classNames[index]);
-    }
+article.appendChild(ul);
 
-    ul.appendChild(li);
-  });
-
-  article.appendChild(ul);
+  
   article.appendChild(createNewsCard(hotTopics[0], "hotTopic"));
 
   section.appendChild(article);
   return section;
 }
-console.log(hotTopics)
-
  
 
-sections.forEach(section => {
-  if (section.id === "latest") {
-    leftContent.appendChild(
-      renderNewsSection(latest, section, "latest")
-    );
-  }
-
-  if (section.id === "trending") {
-    leftContent.appendChild(
-      renderNewsSection(trending, section, "trending")
-    );
-  }
-
-  if (section.id === "tips") {
-    leftContent.appendChild(
-      renderNewsSection(tips, section, "tips")
-    );
-  }
-
-  if (section.id === "hotTopic") {
+ 
+ 
+   
     rightSide.appendChild(renderHotTopics());
-  }
-});
+  
+ 

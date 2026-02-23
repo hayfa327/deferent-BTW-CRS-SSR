@@ -90,7 +90,7 @@ text-decoration: none;
   border-bottom: 1px solid rgb(136, 20, 245);
   padding: 0.5rem;
    margin-left: 0.5rem;
-   margin-right: 2rem;  
+   width: 100%;
 }
 
  .latest-news {
@@ -158,7 +158,7 @@ text-decoration: none;
 
 .content-trending {
   width: 100%;
-     max-width: 23.5rem;
+     max-width: 24rem;
    background: white;
   height: 5rem;
   color: black;
@@ -225,14 +225,17 @@ text-decoration: none;
   gap: 2rem;
   padding: 2rem;
   align-items: flex-start;
+   gap: 2rem;
+  align-items: flex-start;
  
 }
 
 .right-columns {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+ gap: 3rem;
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .hot-Topics,
@@ -272,13 +275,26 @@ text-decoration: none;
   flex: 3; 
 }
 
-  .hot-Topics {
+
+ .hot-Topics {
 max-width: 300px;
 color: white;
 border: 1px solid rgba(138, 69, 250, 0.3);
 background-color: rgba(84, 56, 206, 0.164);
- 
- 
+ width: 100%;
+ margin-top: 8rem;
+flex: 1;
+
+}
+
+  .hot-Topics1 {
+max-width: 300px;
+color: white;
+border: 1px solid rgba(138, 69, 250, 0.3);
+background-color: rgba(84, 56, 206, 0.164);
+ width: 100%;
+flex: 1;
+
 }
 
 .dargon {
@@ -320,15 +336,19 @@ background-color: rgba(84, 56, 206, 0.164);
 
 .list-hot-topics {
   display: flex;
-  flex-direction: row;
+    flex-wrap: wrap;   
   gap: 1rem;
   list-style: none;
+   max-width: 300px;
+  width: 100%;
 }
+ 
 
 .list-hot-topics li {
   padding: 0.5rem;
   border-radius: 5px;
   font-size: 1rem;
+  
 }
 
 .list-hot-topics li:hover {
