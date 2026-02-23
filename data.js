@@ -67,7 +67,7 @@ export const hotTopics = [
      {
       image: "./assets/hot-topic/dargon-one.png",
       title: "DragonQuest IX Leaks",
-      description: "Rumors suggest a new DragonQuest IX game is in development, with leaks hinting at a return to classic RPG elements and an expansive world to explore."
+      description: " Exciting news for RPG fans as leaks suggest DragonQuest IX is in development, promising a new adventure in the beloved series. While details remain unconfirmed, industry insiders suggest development is already well underway."
 
     }
 ];
@@ -77,5 +77,5 @@ export const hotTopicsWithoutImages = [
   { title: "RPG" },
    { title: "Shooter" },
     { title: "Multiplayer" },
-     { title: "Adventure" },
+     { title: "Adventure" }
 ];
