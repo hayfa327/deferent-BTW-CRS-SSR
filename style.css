@@ -89,14 +89,14 @@ text-decoration: none;
   font-size: 2.5rem;
   border-bottom: 1px solid rgb(136, 20, 245);
   padding: 0.5rem;
-   margin-left: 2rem;
+   margin-left: 0.5rem;
    margin-right: 2rem;  
 }
 
  .latest-news {
   display: flex;
   gap: 1rem;
-    margin-left: 2rem;  
+    margin-left: 0.5rem;  
 }
 
 .news-card {
@@ -106,33 +106,38 @@ text-decoration: none;
 
 .eldePic {
   width: 100%;
-   max-width: 28rem;
+   max-width: 17.5rem;
   height: 17rem;     
   display: block;
   object-fit: cover;
+  margin-left: 0.5rem;
 
 }
 
 .cyberPic {
   width: 100%;
-    max-width: 28rem;
+    max-width: 17.5rem;
   height: 17rem;     
   display: block;
   object-fit: center bottom;
+   margin-left: 0.5rem;
 }
 
 .content-news {
   width: 100%;
-      max-width: 27.5rem;
+      max-width: 17.5rem;
    background: white;
-  height: 5rem;
+  height: 5.3rem;
   color: black;
   display: flex;               
   flex-direction: column;      
   justify-content: flex-start;  
   align-items: flex-start;
   padding-top: 0.5rem;
-  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  
+    
+   
 }
 
 .content-news h3 {
@@ -162,7 +167,7 @@ text-decoration: none;
   justify-content: flex-start;  
   align-items: flex-start;
   padding-top: 0.5rem;
-  padding-left: 0.5rem;
+  
 }
 
 .content-trending h3 {
@@ -179,9 +184,9 @@ text-decoration: none;
   font-size: 2.5rem;
   border-bottom: 1px solid rgb(136, 20, 245);
   padding: 0.5rem;
-   margin-left: 2rem;
    margin-right: 2rem; 
    width: 60%; 
+    
 }
 
 .TipsPic {
@@ -203,7 +208,7 @@ text-decoration: none;
     justify-content: flex-start;  
     align-items: flex-start;
     padding-top: 0.5rem;
-    padding-left: 0.5rem;
+    
 }
 
 .content-Tips h3 {
@@ -223,17 +228,55 @@ text-decoration: none;
  
 }
 
+.right-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: flex-start;
+}
+
+.hot-Topics,
+.javascript {
+  flex: 1;
+}
+
+.javascript {
+  border: 1px solid white;
+  background-color: #b144f04f;
+  padding: 0.5rem;
+   box-shadow: 0 0 15px rgba(177, 68, 240, 0.8),
+              0 0 30px rgb(255, 100, 255);
+   
+}
+
+
+
+.javascript a  {
+  max-width: 160px;
+  font-weight: 400;
+  display: inline-block;
+  font-size: 1.5rem;
+text-decoration: none;
+  background: linear-gradient(
+    60deg,
+    rgb(1, 2, 7),
+    rgb(3, 6, 21)
+  );
+ background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .left-content {
-  flex: 3;  
+  flex: 3; 
 }
 
   .hot-Topics {
-  flex: 1;
-min-width: 280px;
+max-width: 280px;
 color: white;
 border: 1px solid rgba(138, 69, 250, 0.3);
 background-color: rgba(84, 56, 206, 0.164);
-margin-right: 4rem;
+margin-right: 0.5rem;
  
 }
 
@@ -370,7 +413,43 @@ margin-right: 4rem;
   margin-top: 2rem;
   border-top: 1px solid rgba(138, 69, 250, 0.1);
   font-size: 0.85rem;
-  color: #7c7b7b;
+  color: #5b5a5a;
 }
 
 
+@media (max-width: 768px) {
+
+  .navbarContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-content {
+    margin-left: 1rem;
+  }
+
+  .title-hero {
+    font-size: 2.2rem;
+  }
+
+  .latest-news {
+    flex-direction: column;
+  }
+
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .hot-Topics {
+    margin-right: 0;
+    width: 100%;
+  }
+
+}
+
+ 
