@@ -122,4 +122,3 @@ article.appendChild(ul);
 };
     rightSide.appendChild(renderHotTopics());
   
- 
